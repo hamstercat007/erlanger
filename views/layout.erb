@@ -1,36 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>ADVENTURE GAME IN RUBY MADE BY LISA, ARIOLA, HAZEL, ANGELA</title>
-<link rel='stylesheet' type='text/css' href='/style.css'>
-<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,500,600' rel='stylesheet' type='text/css'>
+<title>ADVENTURE GAME IN RUBY</title>
+
+<link href='https://fonts.googleapis.com/css?family=Bangers|Open+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+<link rel='stylesheet' href='/css/normalize.css'>
+<link rel='stylesheet' href='/css/drop-in.css'>
+<link rel='stylesheet' href='/css/application.css'>
 </head>
 
 <body>
   <div id="container">
     <div id='header'>
-      <a href='/'><img src='/logo2.png' alt='logo image' class='logo'/></a>    
+      <a href='/'><img src='/logo2.png' alt='logo image' class='logo'/></a>
       <a href='/team' class='nav'>ERLANG TEAM</a>
       <a href='/about' class='nav'>THE CASE OF UNEXPLAINED</a>
       <a href='/' class='nav'>FIRST LANDING</a>
     </div>
 
-    <div id='main'>
+    <main>
       <%= yield %>
-    </div>
+    </main>
 
-    <div id='footer'>
+    <footer>
     <br>
-    © CODE FIRST:GIRLS presents
-    © ERLANG ENTERTAINMENT
-    © TEXT-BASED ADVENTURE GAME IN RUBY
-    </div>
-    
+    <p>© CODE FIRST:GIRLS presents</p>
+    <p>© ERLANG ENTERTAINMENT</p>
+    <p>© TEXT-BASED ADVENTURE GAME IN RUBY</p>
+    <p>© By Lisa, Ariola, Hazel & Angela</p>
+  </footer>
+
 	<div id="openweathermap-widget-18"></div>
 	<script>window.myWidgetParam ? window.myWidgetParam : window.myWidgetParam = [];  window.myWidgetParam.push({id: 18,cityid: '2643743',appid: '18619bea0ba67fb0a69502b47c39d45b',units: 'metric',containerid: 'openweathermap-widget-18',  });  (function() {var script = document.createElement('script');script.async = true;script.charset = "utf-8";script.src = "//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js";var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(script, s);  })();
 	</script>
 
-   
+
   </div>
 </body>
 </html>

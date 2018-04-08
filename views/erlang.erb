@@ -1,88 +1,65 @@
-
-
-<IMG SRC="neptune.gif">
-
-
+<img class='center' src="neptune.gif">
 
 <form action = "/erlang" method = "post">
 <input type="hidden" name="questionNumber" value="<%= @questionNumber  %>">
 
 <% if @questionNumber == "1" %>
-  <br>
-  <br>
- Welcome to Erlang !
-  <br>
-  <br>
-  <button type="submit" value="stay" name="selection">Here goes</button>
- 
+  <p>Welcome to Erlang !</p>
+  <div style="text-align:center;">
+  <button type="submit" value="stay" name="selection">Let's go!</button>
+</div>
+
 <% end %>
 
 <% if @questionNumber == 2 %>
-
-  <br>
-  <br>
-You land safely on the planet Erlang. There is a rocky crater surface.
-It's just you and your pet monkey, and 2 apples in the space capsule.
-The species on planet Erlang are called Erlangers.
-It is customary for strangers to give the Erlangers a gift.
-What do you give them as a gift - your monkey or the apples ?
-  <br>
-  <br>
+<p>You land safely on the planet Erlang. There is a rocky crater surface.</p>
+<p>It's just you and your pet monkey, and 2 apples in the space capsule.</p>
+<p>The species on planet Erlang are called Erlangers.</p>
+<p>It is customary for strangers to give the Erlangers a gift.</p>
+<p>What do you give them as a gift - your monkey or the apples?
+  <div style="text-align:center;">
   <button type="submit" value="monkey" name="selection">Monkey</button>
-  <button type="submit" value="apples" name="selection">Apple</button>
-  
+  <button type="submit" value="apples" name="selection">Apples</button>
+</div>
+
 <% end %>
 
 
 <% if @questionNumber == 3 && @selection == "monkey" %>
+<p>Are you kidding ? How could you give away your best friend Reece! You animal !!</p>
+<p>The Erlangers are surprised at your ruthlessness and place you in their jails where you die.</p>
+<p>The monkey lives happily in luxury amongst them.</p>
 
- <br>
- <br>
- Are you kidding ? How could you give away your best friend Reece! You animal !!
- The Erlangers are surprised at your ruthlessness and place you in their jails where you die.
- The monkey lives happily in luxury amongst them.
-  <br>
-  <br>
- 
-  <button type="submit" value="leave" name="selection">Good bye, Judas. Never see you again.</button>
-
+<div style="text-align:center;">
+<button type="submit" value="leave" name="selection">Goodbye. Hope to never see you again.</button>
+</div>
   <% comment do %> Some stuff that won't be rendered...
   <button type="submit" value="1" name="selection">1</button>
   <button type="submit" value="2" name="selection">2</button>
   <% end %>
-  
+
 <% end %>
 
 <% if @questionNumber == 3 && @selection == "apples" %>
-  <br>
-  <br>
-  How many apples do you give them?
-  <br>
-  <br>
+  <p>How many apples do you give them?<p>
+  <div style="text-align:center;">
   <button type="submit" value="1" name="selection">1</button>
   <button type="submit" value="2" name="selection">2</button>
+</div>
 <% end %>
 
 <% if @questionNumber == 4 && @selection == "1" %>
-  <br>
-  <br>
-  The Erlangers are unimpressed with your presents.  They banish you from the planet.
-  <br>
-  <br>
-  <button type="submit" value="leave" name="selection">Greedy Scrooge McDuck, go back to your Money Bin.</button>
-  
+  <p>The Erlangers are unimpressed with your presents. They banish you from the planet.</p>
+
+  <button style="text-align:center;" type="submit" value="leave" name="selection">Greedy Scrooge McDuck, go back to your Money Bin.</button>
 <% end %>
 
 <% if @questionNumber == 4 && @selection == "2" %>
+  <p>That's very generous of you. The Erlangers are pleased with your gifts.</p>
+  <p>They take you into their palace and provide a banquet for you.</p>
 
-  <br>
-  <br>
-  That's very generous of you. The Erlangers are pleased with your gifts.
-  They take you into their palace and provide a banquet for you.
-  <br>
-  <br>
+<div style="text-align:center;">
   <button type="submit" value="leave" name="selection"> Well done ! There's nothing else you need to do. Target acquired !</button>
-
-    
+</div> 
 <% end %>
 </form>

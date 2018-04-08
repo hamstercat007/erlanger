@@ -1,0 +1,57 @@
+/* drop-in.css */
+
+/* RESETS */
+/* html { box-sizing: border-box; } */
+
+body {
+  margin:0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, p {
+  text-align: center;
+  font-weight: normal;
+
+}
+
+/* DESIGN STYLES  */
+
+/* Fonts */
+
+html { font-family: 'Open Sans', sans-serif; }
+
+h1, h2, h3, h4, p {
+  text-align: center;
+  font-family: 'Bangers', sans-serif;
+  font-weight: 400;
+  color: #8a8a8a;
+}
+/* Colors */
+
+html {
+  background-image: url('/milky_way.gif');
+}
+
+main {
+  width: 1180px;
+  min-height: 200px;
+  border-radius: 4px;
+  display: block;
+  position: relative;
+  padding: 50px 0px;
+}
+
+/* FOOTER STYLES */
+
+footer {
+  text-align: center;
+  font-size: 10px;
+  display: block;
+  color: #8a8a8a;
+  height: 100px;
+  padding: 10px;
+  text-align:center;
+}

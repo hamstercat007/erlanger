@@ -1,7 +1,5 @@
 
-
-
-<IMG SRC="neptune.gif">
+<img class='center' src="neptune.gif">
 
 <form action = "/earth" method = "post">
 <input type="hidden" name="questionNumber" value="<%= @questionNumber  %>">
@@ -9,14 +7,16 @@
 <% if @questionNumber == "1" %>
   <br>
   <br>
- Cold War II has erupted between Russia and the United States.
-Nuclear bombs have been released and landed in your country, wiping out cities from the thermal blast.
-  You suffer the effects of ionising radiation and feel ill.
-  Do you still stay on planet Earth, or do you go to another planet in Elon Musk's SpaceX ? 
+  <p>Cold War II has erupted between Russia and the United States.</p>
+  <p>Nuclear bombs have been released and landed in your country, wiping out cities from the thermal blast.</p>
+  <p>You suffer the effects of ionising radiation and feel ill.</p>
+  <p>Do you still stay on planet Earth, or do you go to another planet in Elon Musk's SpaceX?</p>
   <br>
   <br>
+<div style="text-align:center;">
   <button type="submit" value="stay" name="selection">Stay on Earth</button>
-  <button type="submit" value="leave" name="selection">Leave Earth</button>  
+  <button type="submit" value="leave" name="selection">Leave Earth</button>
+</div>
 <% end %>
 
 
