@@ -1,50 +1,45 @@
-<IMG SRC="neptune.gif">
-
+<img class='center' src="saturn.gif">
 
 <form action = "/saturn" method = "post">
 <input type="hidden" name="questionNumber" value="<%= @questionNumber  %>">
 
 <% if @questionNumber == "1" %>
-  <br>
-  <br>
-  Welcome to Saturn. The rings of Saturn are the most extensive ring system of any planet in the Solar System. They consist of countless small particles.
-  Your job if you choose to save this planet is to save the rings of Saturn. Do you accept?
-  <br>
-  <br>
+  <p>Welcome to Saturn.</p>
+  <p>The rings of Saturn are the most extensive ring system of any planet in the Solar System. They consist of countless small particles.</p>
+  <p>Your job if you choose to save this planet is to save the rings of Saturn. Do you accept?</p>
+
+<div style="text-align:center;">
   <button type="submit" value="stay" name="selection">Yes</button>
-  <button type="submit" value="leave" name="selection">No</button>  
+  <button type="submit" value="leave" name="selection">No</button>
+</div>
 <% end %>
 
 <% if @questionNumber == 2 %>
-  <br>
-  <br>
- You made a brave choice to save the rings of Saturn.
- Hope you packed your spacesuit, to save the rings of Saturn you must orbit the planet along the rings. 
- Unlike Earth Saturn has many moons so watch out they don't hit you. 
- Your riding the rings of Saturn, and the moons are coming.
-  <br>
-  <br>
- <button type="submit" value="stay" name="selection">Try and hit them off </button>
-<% end %>
+  <p>You made a brave choice to save the rings of Saturn.</p>
+  <p>Hope you packed your spacesuit, to save the rings of Saturn you must orbit the planet along the rings.</p>
+  <p>Unlike Earth Saturn has many moons so watch out they don't hit you.</p>
+  <p>Your riding the rings of Saturn, and the moons are coming.</p>
 
+<div style="text-align:center;">
+ <button type="submit" value="stay" name="selection">Try and hit them off </button>
+</div>
+<% end %>
 
 <% if @questionNumber == 3 %>
-  <br>
-  <br>
-  The moons are coming hard and fast... you've been hit by many moons, your space suit is disintegrating and your oxygen has run out.
-  <button type="submit" value="leave" name="selection">Sorry, we can't help you</button> 
-  <button type="submit" value="harder" name="selection">Try harder </button>
-<% end %>
+  <p>The moons are coming hard and fast... you've been hit by many moons, your space suit is disintegrating and your oxygen has run out.</p>
 
+<div style="text-align:center;">
+  <button type="submit" value="leave" name="selection">Sorry, we can't help you</button>
+  <button type="submit" value="harder" name="selection">Try harder </button>
+</div>
+<% end %>
 
 <% if @questionNumber == 4 && @selection == "harder" %>
-  <br>
-  <br>
-  You only got hit by a few moons, nice work you've saved Saturn... 
-  <br>
-  <br>
-  <button type="submit" value="leave" name="selection"> Which Planet will you save next?</button>
-<% end %>
+  <p>You only got hit by a few moons, nice work you've saved Saturn...</p>
 
+<div style="text-align:center;">
+  <button type="submit" value="leave" name="selection"> Which Planet will you save next?</button>
+</div>
+<% end %>
 
 </form>

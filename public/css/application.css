@@ -1,4 +1,3 @@
-/* If needing to add classes as CSS selectors, if using HTML tags as selectors, use drop-in.CSS */
 #header {
   display: block;
   padding-top: 30px;
@@ -31,7 +30,7 @@
     width: 50%;
 }
 img.logo {
-  height: 54px;
+  height: 70px;
   border-radius: 2px;
   border-radius: 2px;
   background-color: #ffffff;
