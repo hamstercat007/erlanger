@@ -1,0 +1,36 @@
+<IMG SRC="neptune.gif">
+
+
+
+<form action = "/mars" method = "post">
+<input type="hidden" name="questionNumber" value="<%= @questionNumber  %>">
+
+<% if @questionNumber == "1" %>
+  <br>
+  <br>
+   Welcome to the Red Planet. Mars is the most Earth-Like of all the planets. Russia is planning to colonise Mars. You must act fast!
+   We understand that you had a hard time entering space and landing on Mars. Just stay focused... Crater sand buries you while you are getting distracted.
+   You'll be presented with two questions at once. We know, this is a poor timing, but please answer immediately.
+   <br>
+   <br>
+   Is there a water on Mars ? Is a day on Mars is longer than one on Earth ? 
+  <br>
+  <br>
+  <button type="submit" value="yes" name="selection"> Yes </button>
+  <button type="submit" value="no" name="selection"> No </button>
+  
+<% end %>
+
+<% if @questionNumber == 2 && @selection == "yes"%>
+  <br>
+  <br>
+  <button type="submit" value="leave" name="selection">Congratulations for being so focused throughout. Your children would live in piece on an independent Mars. </button>
+<% end %>
+
+<% if @questionNumber == 2 && @selection == "no"%>
+  <br>
+  <br> 
+ <button type="submit" value="leave" name="selection">That is not exactly true. You did not know that water on Mars is frozen in the ground, and a day on Mars is longer than one on Earth. It is time to die. </button>
+<% end %>
+
+</form>

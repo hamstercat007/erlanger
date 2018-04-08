@@ -1,0 +1,40 @@
+<IMG SRC="neptune.gif">
+
+
+
+<form action = "/jupiter" method = "post">
+<input type="hidden" name="questionNumber" value="<%= @questionNumber  %>">
+
+<% if @questionNumber == "1" %>
+  <br>
+  <br>
+  Well done for being awesome in picking Jupiter. Looks like you've brought more than sweat to this planet, what is that smell....
+  yes yes, I'm being funny, since you've arrived on the gas giant, get it? No? Google it when you get back, if you get back muhaha
+  How do you wish to proceed in this smelly environment (bear in mind, you may not be able to breathe soon)
+ 
+  <br>
+  <br>
+  <button type="submit" value="one" name="selection">Option 1: Attack with stink bombs </button>
+  <button type="submit" value="two" name="selection">Option 2: Run around screaming that you can't breathe </button>
+  <button type="submit" value="three" name="selection">Or Option 3: Use the gas mask you managed to remember to bring with you </button> 
+<% end %>
+
+<% if @questionNumber == 2 && @selection == "one"%>
+  <br>
+  <br>
+  <button type="submit" value="leave" name="selection">Someone was dropped as a baby... </button>
+<% end %>
+
+<% if @questionNumber == 2 && @selection == "two"%>
+  <br>
+  <br> 
+ <button type="submit" value="leave" name="selection">Really? How is that going to truly help ? </button>
+<% end %>
+
+<% if @questionNumber == 2 && @selection == "three"%>
+  <br>
+  <br>
+  <button type="submit" value="leave" name="selection">Aren't you smart for bringing that with you? Lucky you </button>  
+<% end %>
+
+</form>
