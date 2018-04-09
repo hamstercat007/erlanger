@@ -63,7 +63,8 @@ end
 post "/saturn" do
 	@questionNumber = params[:questionNumber].to_i + 1
 	@selection = params[:selection]
-	
+	@generated_number = rand(10)
+    
 	if params[:questionNumber] == "1" || params[:questionNumber] == "3"
 		if params[:selection] == "stay"
 			erb :saturn

@@ -6,40 +6,47 @@
 <% if @questionNumber == "1" %>
   <p>Welcome to Saturn.</p>
   <p>The rings of Saturn are the most extensive ring system of any planet in the Solar System. They consist of countless small particles.</p>
-  <p>Your job if you choose to save this planet is to save the rings of Saturn. Do you accept?</p>
+  <p>Your job if you choose to save this planet is to save the rings of Saturn. What will you do?</p>
 
-<div style="text-align:center;">
-  <button type="submit" value="stay" name="selection">Yes</button>
-  <button type="submit" value="leave" name="selection">No</button>
-</div>
+    <div style="text-align:center;">
+        <button type="submit" value="stay" name="selection">Save planet Saturn</button>
+        <button type="submit" value="leave" name="selection">Leave Saturn</button>
+    </div>
 <% end %>
 
 <% if @questionNumber == 2 %>
   <p>You made a brave choice to save the rings of Saturn.</p>
   <p>Hope you packed your spacesuit, to save the rings of Saturn you must orbit the planet along the rings.</p>
   <p>Unlike Earth Saturn has many moons so watch out they don't hit you.</p>
-  <p>Your riding the rings of Saturn, and the moons are coming.</p>
+  <p>Your riding the rings of Saturn, and the moons are coming... do you try and hit them off?</p>
 
-<div style="text-align:center;">
- <button type="submit" value="stay" name="selection">Try and hit them off </button>
-</div>
+    <div style="text-align:center;">
+        <button type="submit" value="yes" name="selection">Yes</button>
+        <button type="submit" value="no" name="selection">No</button>
+    </div>
+
 <% end %>
 
-<% if @questionNumber == 3 %>
-  <p>The moons are coming hard and fast... you've been hit by many moons, your space suit is disintegrating and your oxygen has run out.</p>
+<% if @questionNumber == 3 && @selection == "yes" %>
+<% if @generated_number <= 5 %>
+<p> You only got hit by <%= @generated_number %> moons, nice work you've saved Saturn... which planet will you save next? </p>
 
-<div style="text-align:center;">
-  <button type="submit" value="leave" name="selection">Sorry, we can't help you</button>
-  <button type="submit" value="harder" name="selection">Try harder </button>
-</div>
+    <div style="text-align:center;">
+        <button type="submit" value="leave" name="selection">Pick a planet</button>
+    </div>
+
+<% else %>
+<p>The moons are coming hard and fast... you've been hit by <%= @generated_number %> moons, your space suit is disintegrating and your oxygen has run out!</p>
+
+    <div style="text-align:center;">
+        <button type="submit" value="leave" name="selection">Play Again</button>
+    </div>
+<% end %>
 <% end %>
 
-<% if @questionNumber == 4 && @selection == "harder" %>
-  <p>You only got hit by a few moons, nice work you've saved Saturn...</p>
-
-<div style="text-align:center;">
-  <button type="submit" value="leave" name="selection"> Which Planet will you save next?</button>
-</div>
+<% if @questionNumber == 3 && @selection == "no" %>
+<p>Even in your space suit you're not invincible... the moons smash your space suit to pieces and your oxygen runs out. You failed to save the planet!</p>
 <% end %>
+
 
 </form>
