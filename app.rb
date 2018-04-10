@@ -83,7 +83,7 @@ post "/jupiter" do
 	@questionNumber = params[:questionNumber].to_i + 1
 	@selection = params[:selection]
 	
-	if params[:questionNumber] == "1" || params[:questionNumber] == "3"
+	if params[:questionNumber] == "1" || params[:questionNumber] == "2"
 		if params[:selection] == "stay"
 			erb :jupiter
 		elsif params[:selection] == "leave"
@@ -92,7 +92,7 @@ post "/jupiter" do
 			erb :jupiter
 		end
 	else
-		erb :erlang
+		erb :jupiter
 	end
 end
 

@@ -19,6 +19,31 @@
 </div>
 <% end %>
 
+<% if @questionNumber == 2 %>
+<p> Are you sure? </p>
+<div style="text-align:center;">
+<button type="submit" value="yes" name="selection">Yes stay</button>
+<button type="submit" value="no" name="selection">No leave here</button>
+</div>
+<% end %>
+
+<% if @questionNumber == 3 && @selection == "yes" %>
+<p>Global warming melts the ice caps and floods planet Earth</p>
+<p>You drown and the human race is wiped out</p>
+<p>The human race was warned for centuries but ignored it</p>
+
+<div style="text-align:center;">
+<button type="submit" value="leave" name="selection">Play again</button>
+</div>
+<% end %>
+
+<% if @questionNumber == 3 && @selection == "no" %>
+<p>That's another £150,000 to pay out - you end up selling all of your assets, house and family treasures to pay for your space fare</p>
+
+<div style="text-align:center;">
+<button type="submit" value="leave" name="selection">Choose another planet</button>
+</div>
+<% end %>
 
 
 </form>
