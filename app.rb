@@ -47,7 +47,7 @@ post "/erlang" do
 	@questionNumber = params[:questionNumber].to_i + 1
 	@selection = params[:selection]
 	
-	if params[:questionNumber] == "1" || params[:questionNumber] == "3"
+    # if params[:questionNumber] == "1" || params[:questionNumber] == "3" || params[:questionNumber] == "4"
 		if params[:selection] == "stay"
 			erb :erlang
 		elsif params[:selection] == "leave"
@@ -55,9 +55,9 @@ post "/erlang" do
 		else 
 			erb :erlang
 		end
-	else
-		erb :erlang
-	end
+        #else
+        #erb :erlang
+        #end
 end
 
 post "/saturn" do
@@ -100,7 +100,7 @@ post "/mars" do
 	@questionNumber = params[:questionNumber].to_i + 1
 	@selection = params[:selection]
 	
-	if params[:questionNumber] == "1" || params[:questionNumber] == "3"
+	if params[:questionNumber] == "1" || params[:questionNumber] == "2"
 		if params[:selection] == "stay"
 			erb :mars
 		elsif params[:selection] == "leave"

@@ -50,8 +50,10 @@
 
 <% if @questionNumber == 4 && @selection == "1" %>
   <p>The Erlangers are unimpressed with your presents. They banish you from the planet.</p>
+<div style="text-align:center;">
+  <button type="submit" value="leave" name="selection">Greedy Scrooge McDuck, go back to your Money Bin.</button>
+</div>
 
-  <button style="text-align:center;" type="submit" value="leave" name="selection">Greedy Scrooge McDuck, go back to your Money Bin.</button>
 <% end %>
 
 <% if @questionNumber == 4 && @selection == "2" %>
