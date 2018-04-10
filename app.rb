@@ -29,7 +29,7 @@ post "/earth" do
 	@questionNumber = params[:questionNumber].to_i + 1
 	@selection = params[:selection]
 
-	if params[:questionNumber] == "1" || params[:questionNumber] == "3"
+	if params[:questionNumber] == "1" || params[:questionNumber] == "2"
 		if params[:selection] == "stay"
 			erb :earth
 		elsif params[:selection] == "leave"
