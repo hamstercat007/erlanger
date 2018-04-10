@@ -19,6 +19,19 @@
 </div>
 <% end %>
 
-
+<% if @questionNumber =="2" && @selection == "stay" %>
+   <br>
+   <br>
+   <p>Global warming melts the ice caps and floods planet Earth</p>
+   <p>You drown and the human race is wiped out</p>
+   <p>The human race was warned for centuries but ignored it</p>
+ <% end %>
+ 
+  <% if @questionNumber =="2" && @selection == "leave" %>
+   <br>
+   <br>
+   <p>That's another £150,000 to pay out - you end up selling all of your assets, house and family treasures to pay for your space fare</p>
+  <% end %>
+   
 
 </form>
