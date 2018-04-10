@@ -5,14 +5,13 @@
 <p>...Now we're going to enter hard mode...It might sound a bit morbid, but that's just the life-and-death World of Adventure.</p>
 <p>OUR NAMES DON'T MATTER, NEITHER DOES YOUR...AND STRANGE AS IT SEEMS WE'RE HERE TO HELP!</p>
 <p>Fasten your seatbelts and check out <a href="/about" title="">The Case of the Unexplained</a></p>
+<h2> Look below and select which planet you'll save</h2>
 
 <img class='center' src="p5.gif">
 
-<h2>Play now</h2>
-
 <p>Don't wait around, just click on the button below.Trust your instincts, you have a total control.</p>
 
-<form action= "/" method = "post" >
+<form class= "game" action= "/" method = "post" >
 <input type="hidden" name="questionNumber" value="1">
 <div style="text-align:center;">
 <button type= "submit" value = "earth" name = "selection" > Earth </button>
@@ -22,3 +21,7 @@
 <button type= "submit" value = "mars" name = "selection" > Mars </button>
 </div>
 </form>
+
+<script>
+window.scrollTo(0,document.body.scrollHeight);
+</script>

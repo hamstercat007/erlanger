@@ -3,7 +3,8 @@ require "sinatra"
 def comment
 end
 
-get "/" do 
+get "/" do
+    @selection = params[:selection]
 	erb :home
 end
 
