@@ -10,7 +10,7 @@ end
 
 post "/" do
 	@questionNumber = params[:questionNumber]
-	
+
 	if params[:selection] == "earth"
 		erb :earth
 	elsif params[:selection] == "erlang"
@@ -22,20 +22,20 @@ post "/" do
 	elsif params[:selection] == "mars"
 		erb :mars
 	else
-		erb :home	
-	end		
-end	
+		erb :home
+	end
+end
 
 post "/earth" do
 	@questionNumber = params[:questionNumber].to_i + 1
 	@selection = params[:selection]
-	
+
 	if params[:questionNumber] == "1" || params[:questionNumber] == "3"
 		if params[:selection] == "stay"
 			erb :earth
 		elsif params[:selection] == "leave"
 			erb :home
-		else 
+		else
 			erb :earth
 		end
 	else
@@ -53,7 +53,7 @@ post "/erlang" do
 			erb :erlang
 		elsif params[:selection] == "leave"
 			erb :home
-		else 
+		else
 			erb :erlang
 		end
         #else
@@ -65,13 +65,13 @@ post "/saturn" do
 	@questionNumber = params[:questionNumber].to_i + 1
 	@selection = params[:selection]
 	@generated_number = rand(10)
-    
+
 	if params[:questionNumber] == "1" || params[:questionNumber] == "3"
 		if params[:selection] == "stay"
 			erb :saturn
 		elsif params[:selection] == "leave"
 			erb :home
-		else 
+		else
 			erb :saturn
 		end
 	else
@@ -83,13 +83,13 @@ end
 post "/jupiter" do
 	@questionNumber = params[:questionNumber].to_i + 1
 	@selection = params[:selection]
-	
+
 	if params[:questionNumber] == "1" || params[:questionNumber] == "2"
 		if params[:selection] == "stay"
 			erb :jupiter
 		elsif params[:selection] == "leave"
 			erb :home
-		else 
+		else
 			erb :jupiter
 		end
 	else
@@ -100,13 +100,13 @@ end
 post "/mars" do
 	@questionNumber = params[:questionNumber].to_i + 1
 	@selection = params[:selection]
-	
+
 	if params[:questionNumber] == "1" || params[:questionNumber] == "2"
 		if params[:selection] == "stay"
 			erb :mars
 		elsif params[:selection] == "leave"
 			erb :home
-		else 
+		else
 			erb :mars
 		end
 	else
@@ -124,13 +124,3 @@ end
 get "/team" do
 	erb :team
 end
-
-
-
-
-
-
-
-
-
-
