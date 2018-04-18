@@ -3,9 +3,11 @@ require "sinatra"
 def comment
 end
 
+# params is a hash, which uses key - value pairs
+
+
 get "/" do
-    @selection = params[:selection]
-	erb :home
+	 erb :home
 end
 
 post "/" do

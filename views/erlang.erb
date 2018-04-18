@@ -1,9 +1,10 @@
-<img class='center' src="erlang.gif">
+
 
 <form action = "/erlang" method = "post">
 <input type="hidden" name="questionNumber" value="<%= @questionNumber  %>">
 
 <% if @questionNumber == "1" %>
+<img class='center' src="erlang.gif">
   <p>Welcome to Erlang !</p>
   <div style="text-align:center;">
   <button type="submit" value="stay" name="selection">Let's go!</button>
@@ -12,11 +13,16 @@
 <% end %>
 
 <% if @questionNumber == 2 %>
+<img class='center' src="erlang.gif">
 <p>You land safely on the planet Erlang. There is a rocky crater surface.</p>
 <p>It's just you and your pet monkey, and 2 apples in the space capsule.</p>
 <p>The species on planet Erlang are called Erlangers.</p>
 <p>It is customary for strangers to give the Erlangers a gift.</p>
-<p>What do you give them as a gift - your monkey or the apples?
+<p>What do you give them as a gift - your monkey or the apples?</p>
+<img src="monkey.png" style="float:left; width:30%">
+<img src="red_apple.png" style="float:right; padding:10px">
+<img src="red_apple.png" style="float:right; padding:10px">
+
   <div style="text-align:center;">
   <button type="submit" value="monkey" name="selection">Monkey</button>
   <button type="submit" value="apples" name="selection">Apples</button>
@@ -30,8 +36,9 @@
 <p>The Erlangers are surprised at your ruthlessness and place you in their jails where you die.</p>
 <p>The monkey lives happily in luxury amongst them.</p>
 
+<img class='center' src="monkey.png">
 <div style="text-align:center;">
-<button type="submit" value="leave" name="selection">Goodbye. Hope to never see you again.</button>
+<button type="submit" value="leave" name="selection">Goodbye traitor! Hope to never see you again.</button>
 </div>
   <% comment do %> Some stuff that won't be rendered...
   <button type="submit" value="1" name="selection">1</button>
@@ -41,6 +48,11 @@
 <% end %>
 
 <% if @questionNumber == 3 && @selection == "apples" %>
+<img class='center' src="erlang.gif">
+<div class='center'>
+<img src="red_apple.png">
+<img style="padding:20px" src="red_apple.png">
+</div>
   <p>How many apples do you give them?<p>
   <div style="text-align:center;">
   <button type="submit" value="1" name="selection">1</button>
@@ -49,14 +61,24 @@
 <% end %>
 
 <% if @questionNumber == 4 && @selection == "1" %>
-  <p>The Erlangers are unimpressed with your presents. They banish you from the planet.</p>
-<div style="text-align:center;">
+<img class='center' src="erlang.gif">
+  <p>The Erlangers take a bite of the red apple, and gaze longingly at the other one.</p>
+  <p>They think one apple is not enough for them to all share and are unimpressed with your present. They banish you from the planet.</p>
+  <div class="center">
+    <div class="tenor-gif-embed" data-postid="7263498" data-share-method="host" data-width="35%" data-aspect-ratio="0.8326359832635983"><a href="https://tenor.com/view/money-donald-duck-cash-gif-7263498">Donald Duck Money GIF</a> from <a href="https://tenor.com/search/money-gifs">Money GIFs</a></div><script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+     
+  </div>
+  <img src="red_apple.png" style="float:right; position:relative;top:-250px; left:-280px">
+ 
+  <div style="text-align:center">
+  <br>
   <button type="submit" value="leave" name="selection">Greedy Scrooge McDuck, go back to your Money Bin.</button>
 </div>
 
 <% end %>
 
 <% if @questionNumber == 4 && @selection == "2" %>
+<img class='center' src="erlang.gif">
   <p>That's very generous of you. The Erlangers are pleased with your gifts.</p>
   <p>They take you into their palace and provide a banquet for you.</p>
   <p>Well done! You successfully conducted intergalactic space diplomacy with extraterrestrial life.</p>
