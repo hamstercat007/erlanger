@@ -1,2 +1,2 @@
 # game
-https://erlangers.herokuapp.com/
+https://erlanger.herokuapp.com/
