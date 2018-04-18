@@ -4,23 +4,24 @@
 <input type="hidden" name="questionNumber" value="<%= @questionNumber  %>">
 
 <% if @questionNumber == "1" %>
-<p>Well done for being awesome in picking Jupiter.</p>
-<p>Looks like you've brought more than sweat to this planet, what is that smell....</p>
-<p>Yes yes, I'm being funny, since you've arrived on the gas giant, get it? No? Google it when you get back, if you get back muhaha</p>
-<p>How do you wish to proceed in this smelly environment (bear in mind, you may not be able to breathe soon)</p>
+<p>Jupiter has been known to the Romans since antiquity.  It is the largest planet in the solar system.</p>
+<p>The Romans named this planet Jupiter, after the god of sky and thunder.  He was also the king of gods.</p>
+<p>Jupiter is a gas giant primarily composed of hydrogen and therefore does not have a solid surface.</p>
+<p>There is a giant spinning storm in Jupiter's atmosphere, it is like a huge perpetual hurricane and it is called the Great Red Spot </p>
+<p>What do you do?</p>
 
     <div style="text-align:center;">
         <button type="submit" value="one" name="selection">Option 1: Attack with stink bombs</button>
         <button type="submit" value="two" name="selection">Option 2: Run around screaming that you can't breathe</button>
-        <button type="submit" value="three" name="selection">Option 3: Use the gas mask you managed to remember to bring with you</button>
+        <button type="submit" value="three" name="selection">Option 3: Navigate the spacecraft above the atmosphere and away from the storm.</button>
     </div>
 <% end %>
 
 <% if @questionNumber == 2 && @selection == "one"%>
-<p>Someone was dropped as a baby...</p>
+<p>The stink bombs are engulfed in the storm and releases their toxicity</p>
 
       <div style="text-align:center;">
-          <button type="submit" value="leave" name="selection">Leave this place.</button>
+          <button type="submit" value="leave" name="selection">Nice attempt, but you need more than stink bombs for this storm! Leave this place, you planet polluter!</button>
       </div>
 <% end %>
 
@@ -28,15 +29,15 @@
 <p>Really? How is that going to truly help?</p>
 
       <div style="text-align:center;">
-          <button type="submit" value="leave" name="selection">Leave this place.</button>
+          <button type="submit" value="leave" name="selection">Leave this place. One must keep their cool out of space.</button>
       </div>
 <% end %>
 
 <% if @questionNumber == 2 && @selection == "three" %>
-<p>Aren't you smart for bringing that with you? You survived long enough to stop Jupiter from becoming extinct!</p>
+<p>Aren't you smart for bringing that with you? You survived long enough to witness Jupiter</p>
 
     <div style="text-align:center;">
-        <button type="submit" value="leave" name="selection">Target achieved. Go save another planet...</button>
+        <button type="submit" value="leave" name="selection">Target achieved. Go visit another another planet...</button>
     </div>
 <% end %>
 
