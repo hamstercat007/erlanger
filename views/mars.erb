@@ -12,7 +12,7 @@
    <br>
    <p>Is there a water on Mars? Is a day on Mars is longer than one on Earth?</p>
   <br>
-  <div style="text-align:center;">
+  <div class="navigationButtonContainer">
   <button type="submit" value="yes" name="selection">Yes</button>
   <button type="submit" value="no" name="selection">No</button>
 </div>
@@ -21,14 +21,14 @@
 
 <% if @questionNumber == 2 && @selection == "yes"%>
 <p>Congratulations for being so focused throughout. Your children would live in piece on an independent Mars.</p>
-<div style="text-align:center;">
+<div class="navigationButtonContainer">
   <button type="submit" value="leave" name="selection">Choose your next planet to save</button>
 </div>
 <% end %>
 
 <% if @questionNumber == 2 && @selection == "no"%>
 <p> That is not exactly true. You did not know that water on Mars is frozen in the ground, and a day on Mars is longer than one on Earth. It is time to die.</p>
-<div style="text-align:center;">
+<div class="navigationButtonContainer">
  <button type="submit" value="leave" name="selection">Play again</button>
 </div>
 <% end %>

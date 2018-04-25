@@ -41,3 +41,16 @@ img.logo {
   display: block;
   margin: auto;
 }
+
+.navigationButtonContainer {
+  text-align:center;
+}
+
+.navigationButtonContainer button {
+  background-color: purple;
+  box-shadow: 5px 5px 2px #b61be5;
+  padding: 10px;
+  margin-right: 5px;
+  border-radius: 10px;
+  border:0;
+}

@@ -13,7 +13,7 @@
   <p>Do you still stay on planet Earth, or do you go to another planet in Elon Musk's SpaceX?</p>
   <br>
   <br>
-<div style="text-align:center;">
+<div class="navigationButtonContainer">
   <button type="submit" value="stay" name="selection">Stay on Earth</button>
   <button type="submit" value="leave" name="selection">Leave Earth</button>
 </div>
@@ -21,7 +21,7 @@
 
 <% if @questionNumber == 2 %>
 <p> Are you sure? </p>
-<div style="text-align:center;">
+<div class="navigationButtonContainer">
 <button type="submit" value="yes" name="selection">Yes stay</button>
 <button type="submit" value="no" name="selection">No leave here</button>
 </div>
@@ -32,7 +32,7 @@
 <p>You drown and the human race is wiped out</p>
 <p>The human race was warned for centuries but ignored it</p>
 
-<div style="text-align:center;">
+<div class="navigationButtonContainer">
 <button type="submit" value="leave" name="selection">Play again</button>
 </div>
 <% end %>
@@ -40,7 +40,7 @@
 <% if @questionNumber == 3 && @selection == "no" %>
 <p>That's another £150,000 to pay out - you end up selling all of your assets, house and family treasures to pay for your space fare</p>
 
-<div style="text-align:center;">
+<div class="navigationButtonContainer">
 <button type="submit" value="leave" name="selection">Choose another planet</button>
 </div>
 <% end %>

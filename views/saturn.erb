@@ -11,7 +11,7 @@
   <p>Your mission is to save the rings from melting by releasing icing liquid from the spacecraft<p>
   <p>This is not for the faint-hearted.  What do you decide to do?</p>
 
-    <div style="text-align:center;">
+    <div class="navigationButtonContainer">
         <button type="submit" value="stay" name="selection">Save planet Saturn</button>
         <button type="submit" value="leave" name="selection">Leave Saturn</button>
     </div>
@@ -23,7 +23,7 @@
   <p>Saturn has 62 moons though, and these moons also launch waves along the rings, you must watch they don't hit you.</p>
   <p>You ride the rings of Saturn, and the moons are coming at you. Do you attempt to hit them off?</p>
 
-    <div style="text-align:center;">
+    <div class="navigationButtonContainer">
         <button type="submit" value="yes" name="selection">Yes</button>
         <button type="submit" value="no" name="selection">No</button>
     </div>
@@ -34,14 +34,14 @@
 <% if @generated_number <= 5 %>
 <p> You only got hit by <%= @generated_number %> moons, nice work you've saved Saturn... which planet will you save next? </p>
 
-    <div style="text-align:center;">
+    <div class="navigationButtonContainer">
         <button type="submit" value="leave" name="selection">Pick a planet</button>
     </div>
 
 <% else %>
 <p>The moons are coming hard and fast... you've been hit by <%= @generated_number %> moons, your space suit disintegrates and your oxygen runs out!</p>
 
-    <div style="text-align:center;">
+    <div class="navigationButtonContainer">
         <button type="submit" value="leave" name="selection">Play Again</button>
     </div>
 <% end %>
@@ -49,7 +49,7 @@
 
 <% if @questionNumber == 3 && @selection == "no" %>
 <p>It's too late.  You tried to escape, but the moons smash your spacecraft to smithereens. It is karma for running away!</p>
-<div style="text-align:center;">
+<div class="navigationButtonContainer">
 <button type="submit" value="leave" name="selection">Play again</button>
 </div>
 <% end %>
