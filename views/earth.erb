@@ -14,16 +14,16 @@
   <br>
   <br>
 <div class="navigationButtonContainer">
-  <button type="submit" value="stay" name="selection">Stay on Earth</button>
-  <button type="submit" value="leave" name="selection">Leave Earth</button>
+  <button class="earthButton" type="submit" value="stay" name="selection">Stay on Earth</button>
+  <button class="earthButton" type="submit" value="leave" name="selection">Leave Earth</button>
 </div>
 <% end %>
 
 <% if @questionNumber == 2 %>
 <p> Are you sure? </p>
 <div class="navigationButtonContainer">
-<button type="submit" value="yes" name="selection">Yes stay</button>
-<button type="submit" value="no" name="selection">No leave here</button>
+<button class="earthButton" type="submit" value="yes" name="selection">Yes stay</button>
+<button class="earthButton" type="submit" value="no" name="selection">No leave here</button>
 </div>
 <% end %>
 
@@ -33,7 +33,7 @@
 <p>The human race was warned for centuries but ignored it</p>
 
 <div class="navigationButtonContainer">
-<button type="submit" value="leave" name="selection">Play again</button>
+<button class="earthButton" type="submit" value="leave" name="selection">Play again</button>
 </div>
 <% end %>
 
@@ -41,7 +41,7 @@
 <p>That's another £150,000 to pay out - you end up selling all of your assets, house and family treasures to pay for your space fare</p>
 
 <div class="navigationButtonContainer">
-<button type="submit" value="leave" name="selection">Choose another planet</button>
+<button class="earthButton" type="submit" value="leave" name="selection">Choose another planet</button>
 </div>
 <% end %>
 

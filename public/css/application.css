@@ -50,7 +50,13 @@ img.logo {
   background-color: purple;
   box-shadow: 5px 5px 2px #b61be5;
   padding: 10px;
-  margin-right: 5px;
+  margin: 5px;
   border-radius: 10px;
   border:0;
+}
+
+button.earthButton{
+  background-color: #b31515cb;
+  box-shadow:5px 5px 2px hsla(0, 96%, 18%, 0.911);
+  margin: 5px;
 }

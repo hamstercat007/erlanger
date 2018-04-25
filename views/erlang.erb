@@ -3,11 +3,18 @@
 <form action = "/erlang" method = "post">
 <input type="hidden" name="questionNumber" value="<%= @questionNumber  %>">
 
+
 <% if @questionNumber == "1" %>
+  <script>
+document.getElementById("goErlang").addEventListener("click", function(){
+      let audio = new Audio('sci-fi-whoosh.mp3')
+      audio.play();
+      });
+</script>
 <img class='center' src="erlang.gif">
   <p>Welcome to Erlang !</p>
  <div class="navigationButtonContainer">
-  <button type="submit" value="stay" name="selection">Let's go!</button>
+  <button id="goErlang"type="submit" value="stay" name="selection">Let's go!</button>
 </div>
 
 <% end %>
