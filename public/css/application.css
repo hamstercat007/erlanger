@@ -29,6 +29,14 @@
     margin-right: auto;
     width: 50%;
 }
+
+.centerOriginal {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 img.logo {
   height: 70px;
   border-radius: 2px;
@@ -59,4 +67,35 @@ button.earthButton{
   background-color: #b31515cb;
   box-shadow:5px 5px 2px hsla(0, 96%, 18%, 0.911);
   margin: 5px;
+
 }
+
+button.marsButton{
+  background-color: #B70E13;
+  box-shadow:5px 5px 2px #910004;
+  margin: 5px;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  border:0;
+}
+
+button.jupiterButton{
+  background-color: #F97A05;
+  box-shadow:5px 5px 2px rgb(207, 106, 4);
+  margin: 5px;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  border:0;
+
+}
+
+button.saturnButton{
+  background-color: #E0CDAD;
+  box-shadow:5px 5px 2px #A88B6D;
+  margin: 5px;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  border:0;

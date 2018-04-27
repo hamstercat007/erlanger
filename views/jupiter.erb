@@ -11,9 +11,9 @@
 <p>What do you do?</p>
 
     <div class="navigationButtonContainer">
-        <button type="submit" value="one" name="selection">Option 1: Attack with stink bombs</button>
-        <button type="submit" value="two" name="selection">Option 2: Run around screaming that you can't breathe</button>
-        <button type="submit" value="three" name="selection">Option 3: Navigate the spacecraft above the atmosphere and away from the storm.</button>
+        <button class="jupiterButton" type="submit" value="one" name="selection">Option 1: Attack with stink bombs</button>
+        <button class="jupiterButton" type="submit" value="two" name="selection">Option 2: Run around screaming that you can't breathe</button>
+        <button class="jupiterButton" type="submit" value="three" name="selection">Option 3: Navigate the spacecraft above the atmosphere and away from the storm.</button>
     </div>
 <% end %>
 
@@ -21,7 +21,7 @@
 <p>The stink bombs are engulfed in the storm and releases their toxicity</p>
 
       <div class="navigationButtonContainer">
-          <button type="submit" value="leave" name="selection">Nice attempt, but you need more than stink bombs for this storm! Leave this place, you planet polluter!</button>
+          <button class="jupiterButton" type="submit" value="leave" name="selection">Nice attempt, but you need more than stink bombs for this storm! Leave this place, you planet polluter!</button>
       </div>
 <% end %>
 
@@ -29,15 +29,15 @@
 <p>Really? How is that going to truly help?</p>
 
       <div class="navigationButtonContainer">
-          <button type="submit" value="leave" name="selection">Leave this place. One must keep their cool out of space.</button>
+          <button class="jupiterButton" type="submit" value="leave" name="selection">Leave this place. One must keep their cool out of space.</button>
       </div>
 <% end %>
 
 <% if @questionNumber == 2 && @selection == "three" %>
-<p>Aren't you smart for bringing that with you? You survived long enough to witness Jupiter</p>
+<p>Well done for keeping your cool. You survived another day.</p>
 
     <div class="navigationButtonContainer">
-        <button type="submit" value="leave" name="selection">Target achieved. Go visit another another planet...</button>
+        <button class="jupiterButton" type="submit" value="leave" name="selection">Target achieved. Go visit another another planet...</button>
     </div>
 <% end %>
 

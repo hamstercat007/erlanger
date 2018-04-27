@@ -12,8 +12,8 @@
   <p>This is not for the faint-hearted.  What do you decide to do?</p>
 
     <div class="navigationButtonContainer">
-        <button type="submit" value="stay" name="selection">Save planet Saturn</button>
-        <button type="submit" value="leave" name="selection">Leave Saturn</button>
+        <button class="saturnButton" type="submit" value="stay" name="selection">Save planet Saturn</button>
+        <button class="saturnButton" type="submit" value="leave" name="selection">Leave Saturn</button>
     </div>
 <% end %>
 
@@ -24,25 +24,25 @@
   <p>You ride the rings of Saturn, and the moons are coming at you. Do you attempt to hit them off?</p>
 
     <div class="navigationButtonContainer">
-        <button type="submit" value="yes" name="selection">Yes</button>
-        <button type="submit" value="no" name="selection">No</button>
+        <button class="saturnButton" type="submit" value="yes" name="selection">Yes</button>
+        <button class="saturnButton" ype="submit" value="no" name="selection">No</button>
     </div>
 
 <% end %>
 
 <% if @questionNumber == 3 && @selection == "yes" %>
 <% if @generated_number <= 5 %>
-<p> You only got hit by <%= @generated_number %> moons, nice work you've saved Saturn... which planet will you save next? </p>
+<p> You only got hit by <%= @generated_number %> moon(s), nice work you've saved Saturn... which planet will you save next? </p>
 
     <div class="navigationButtonContainer">
-        <button type="submit" value="leave" name="selection">Pick a planet</button>
+        <button class="saturnButton" type="submit" value="leave" name="selection">Pick a planet</button>
     </div>
 
 <% else %>
 <p>The moons are coming hard and fast... you've been hit by <%= @generated_number %> moons, your space suit disintegrates and your oxygen runs out!</p>
 
     <div class="navigationButtonContainer">
-        <button type="submit" value="leave" name="selection">Play Again</button>
+        <button class="saturnButton" type="submit" value="leave" name="selection">Play Again</button>
     </div>
 <% end %>
 <% end %>
@@ -50,7 +50,7 @@
 <% if @questionNumber == 3 && @selection == "no" %>
 <p>It's too late.  You tried to escape, but the moons smash your spacecraft to smithereens. It is karma for running away!</p>
 <div class="navigationButtonContainer">
-<button type="submit" value="leave" name="selection">Play again</button>
+<button class="saturnButton" type="submit" value="leave" name="selection">Play again</button>
 </div>
 <% end %>
 

@@ -15,12 +15,15 @@ document.getElementById("goErlang").addEventListener("click", function(){
   <p>Welcome to Erlang !</p>
  <div class="navigationButtonContainer">
   <button id="goErlang"type="submit" value="stay" name="selection">Let's go!</button>
+  <script>
+window.scrollTo(0,document.body.scrollHeight);
+</script>
 </div>
 
 <% end %>
 
 <% if @questionNumber == 2 %>
-<img class='center' src="erlang.gif">
+<img class='centerOriginal' src="erlang.gif">
 <p>You land safely on the planet Erlang. There is a rocky crater surface.</p>
 <p>It's just you and your pet monkey, and 2 apples in the space capsule.</p>
 <p>The species on planet Erlang are called Erlangers.</p>
@@ -43,10 +46,12 @@ document.getElementById("goErlang").addEventListener("click", function(){
 <p>The Erlangers are surprised at your ruthlessness and place you in their jails where you die.</p>
 <p>The monkey lives happily in luxury, feasting on food amongst them.</p>
 
-<img class='center' src="monkey.png">
+<img class='centerOriginal' src="monkey.png">
 <img src="banana_bunch.png" style="float:left; position:relative; bottom:500px">
 <div style="text-align:center;">
+<div class="navigationButtonContainer">
 <button type="submit" value="leave" name="selection">Goodbye traitor! Hope to never see you again.</button>
+</div>
 </div>
   <% comment do %> Some stuff that won't be rendered...
   <button type="submit" value="1" name="selection">1</button>
@@ -56,7 +61,7 @@ document.getElementById("goErlang").addEventListener("click", function(){
 <% end %>
 
 <% if @questionNumber == 3 && @selection == "apples" %>
-<img class='center' src="erlang.gif">
+<img class='centerOriginal' src="erlang.gif">
 <div class='center'>
 <img src="red_apple.png">
 <img style="padding:20px" src="red_apple.png">
@@ -69,7 +74,7 @@ document.getElementById("goErlang").addEventListener("click", function(){
 <% end %>
 
 <% if @questionNumber == 4 && @selection == "1" %>
-<img class='center' src="erlang.gif">
+<img class='centerOriginal' src="erlang.gif">
   <p>The Erlangers take a bite of the red apple, and gaze longingly at the other one.</p>
   <p>They think one apple is not enough for them to all share and are unimpressed with your present. They banish you from the planet.</p>
   <div class="center">
@@ -86,7 +91,7 @@ document.getElementById("goErlang").addEventListener("click", function(){
 <% end %>
 
 <% if @questionNumber == 4 && @selection == "2" %>
-<img class='center' src="erlang.gif">
+<img class='centerOriginal' src="erlang.gif">
   <p>That's very generous of you. The Erlangers are pleased with your gifts.</p>
   <p>They take you into their palace and provide a banquet for you.</p>
   <p>Well done! You successfully conducted intergalactic space diplomacy with extraterrestrial life.</p>

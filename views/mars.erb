@@ -5,31 +5,36 @@
 
 <% if @questionNumber == "1" %>
   <p>Welcome to the Red Planet.</p>
-  <p>Mars is the most Earth-Like of all the planets. Both China and Russia are in the space race to colonise Mars. You must act fast!</p>
+  <p>Mars is the most Earth-Like of all the planets. China, Russia and the USA are in the space race to colonise Mars. You must act fast!</p>
   <p>Landing on Mars is tricky as crater sand can bury you alive.</p>
-  <p>You'll be presented with two questions at once. We know, this is a poor timing, but please answer immediately.</p>
+  <p>The Martians will help you if you can impress them with your knowlege about Mars.</p>
    <br>
    <br>
-   <p>Is there a water on Mars? Is a day on Mars is longer than one on Earth?</p>
+   <p>Why is Mars red? Is a day on Mars is longer than one on Earth?</p>
   <br>
   <div class="navigationButtonContainer">
-  <button type="submit" value="yes" name="selection">Yes</button>
-  <button type="submit" value="no" name="selection">No</button>
+  <button class="marsButton" type="submit" value="yes" name="selection">Because of rust present in the rocks</button>
+  <button class="marsButton" type="submit" value="no" name="selection">Someone drew on it with a mega-large red pen</button>
 </div>
 
 <% end %>
 
 <% if @questionNumber == 2 && @selection == "yes"%>
-<p>Congratulations for being so focused throughout. Your children would live in piece on an independent Mars.</p>
+<p>That's right. Iron in the dust reacted with oxygen, producing a red rust colour.</p>
+<p>The sky appears red as the storms carry the dust into the atmosphere. 
+<p>You have the edge over the rest!</p> 
+<p>The Martians welcome you to their planet. Welcome esteemed guest! </p>
+<p>Live Long and Prosper. A High Martian Five! </p>
 <div class="navigationButtonContainer">
-  <button type="submit" value="leave" name="selection">Choose your next planet to save</button>
+  <button class="marsButton" type="submit" value="leave" name="selection">Choose your next planet to save</button>
 </div>
 <% end %>
 
 <% if @questionNumber == 2 && @selection == "no"%>
-<p> That is not exactly true. You did not know that water on Mars is frozen in the ground, and a day on Mars is longer than one on Earth. It is time to die.</p>
+<p>Very good guess, but not quite. You start to sink, and the Martians walk away, unimpressed with your lack of research about them.</p>
+<p>Mars is lost to the others in the space race.</p>
 <div class="navigationButtonContainer">
- <button type="submit" value="leave" name="selection">Play again</button>
+ <button class="marsButton" type="submit" value="leave" name="selection">Play again</button>
 </div>
 <% end %>
 
